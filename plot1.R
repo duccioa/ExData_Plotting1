@@ -14,7 +14,7 @@ if(!exists("hpc_sub")) {
 
 
 #plot1
-png("plot1.png", width = 480, height = 480)
+png("plot1.png", width = 480, height = 480, bg = "transparent")
 hist(hpc_sub$Global_active_power, xlab = "Global Active Power (kilowatts)", ylab = "Frequency", main = "Global Active Power", col = "red")
 dev.off()
 

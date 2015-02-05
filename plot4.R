@@ -14,7 +14,7 @@ if(!exists("hpc_sub")) {
 
 
 #plot4
-png("plot4.png", width = 480, height = 480)
+png("plot4.png", width = 480, height = 480, bg = "transparent")
 par(mfrow = c(2,2))
 
 with(hpc_sub, {
