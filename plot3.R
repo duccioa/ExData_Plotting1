@@ -17,7 +17,7 @@ if(!exists("hpc_sub")) {
 
 #plot3
 png("plot3.png", width = 480, height = 480)
-with(hpc_sub, plot(Date_time, Sub_metering_1, type = "n", xlab = "", ylab = "Energy hpc_sub metering"))
+with(hpc_sub, plot(Date_time, Sub_metering_1, type = "n", xlab = "", ylab = "Energy sub metering"))
 lines(hpc_sub$Date_time, hpc_sub$Sub_metering_1)
 lines(hpc_sub$Date_time, hpc_sub$Sub_metering_2, col = "red")
 lines(hpc_sub$Date_time, hpc_sub$Sub_metering_3, col = "blue")

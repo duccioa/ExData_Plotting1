@@ -18,7 +18,7 @@ if(!exists("hpc_sub")) {
 
 #plot2
 png("plot2.png", width = 480, height = 480)
-with(hpc_sub, plot(Date_time, Global_active_power, type = "n", xlab = "", ylab = "Global active power (kilowatts)"))
+with(hpc_sub, plot(Date_time, Global_active_power, type = "n", xlab = "", ylab = "Global Active Power (kilowatts)"))
 lines(hpc_sub$Date_time, hpc_sub$Global_active_power)
 dev.off()
 

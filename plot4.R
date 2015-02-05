@@ -19,17 +19,17 @@ par(mfrow = c(2,2))
 
 with(hpc_sub, {
       #graph1
-      with(hpc_sub, plot(Date_time, Global_active_power, type = "n", xlab = "", ylab = "Global active power (kilowatts)"))
+      with(hpc_sub, plot(Date_time, Global_active_power, type = "n", xlab = "", ylab = "Global Active Power"))
       lines(hpc_sub$Date_time, hpc_sub$Global_active_power)
       #graph2
       with(hpc_sub, plot(Date_time, Voltage, type = "n", xlab = "datetime", ylab = "Voltage"))
       lines(hpc_sub$Date_time, hpc_sub$Voltage)
       #graph3
-      with(hpc_sub, plot(Date_time, Sub_metering_1, type = "n", xlab = "", ylab = "Energy hpc_sub metering"))
+      with(hpc_sub, plot(Date_time, Sub_metering_1, type = "n", xlab = "", ylab = "Energy sub metering"))
       lines(hpc_sub$Date_time, hpc_sub$Sub_metering_1)
       lines(hpc_sub$Date_time, hpc_sub$Sub_metering_2, col = "red")
       lines(hpc_sub$Date_time, hpc_sub$Sub_metering_3, col = "blue")
-      legend("topright", col = c("black", "red", "blue"), lty = c("solid", "solid", "solid"), legend = names(hpc_sub[,6:8]), xjust = 1, yjust = 0.5)
+      legend("topright", col = c("black", "red", "blue"), lty = c("solid", "solid", "solid"), legend = names(hpc_sub[,6:8]), xjust = 1, yjust = 0.5, bty = "n")
       #graph4
       with(hpc_sub, plot(Date_time, Global_reactive_power, type = "n", xlab = "datetime"))
       lines(hpc_sub$Date_time, hpc_sub$Global_reactive_power)
